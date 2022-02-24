@@ -13,81 +13,88 @@ img{
 
 /*************** DEBUG ***************/
 
-/****** debug generico ******/
-
-/****** debug header ******/
-
-/* debug block_menu */
+    /****** debug generico ******/
 #debug #block_menu{
     height: 100px;
     background-color: #0061FF;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
+.blocks{
+    background-color: grey;
+    height: 500px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+}
+
+#debug .text_block{
+    height: 85px;
+    background-color: bisque;
+    border: 1px solid black;
+}
+
+#debug #block_intro{
+    height: 425px;
+    background-color: bisque;
+    border: 1px solid black;
+}
+
+#debug .block{
+    height: 420px;
+    background-color: rgb(187, 227, 86);
+    border: 1px solid black;
+}
+
+#debug #block_team{
+    height: 414px;
+    background-color: rgb(187, 227, 86);
+    border: 1px solid black;
+}
+
+#debug #block_footer{
+    height: 500px;
+    background-color: rgb(187, 227, 86);
+    border: 1px solid black;
+}
+
+    /****** debug header ******/
+
+/* debug block_menu */
 #debug #col_sx{
     background-color: bisque;
     height: 100px;
 }
 
 /* debug block_intro */
-.blocks{
-    background-color: grey;
-    height: 700px;
-    margin-bottom: 200px;
-}
-
-#debug #block_intro{
-    height: 85%;
-    background-color: bisque;
-}
-
 #debug #col_intro_one{
-    background-color: white;
-    height: 50%;
+    background-color: green;
+    height: 200px;
+    border: 1px solid black;
 }
 
 #debug #col_intro_two{
-    height: 50%;
-    background-color: black;
+    height: 225px;
+    background-color: green;
+    border: 1px solid black;
 }
 
 #debug #col_intro_three{
-    height: 50%;
-    background-color: red;
+    height: 225px;
+    background-color: green;
+    border: 1px solid black;
 }
 
-/****** debug main ******/
-
+    /****** debug main ******/
 #debug .col{
-    height: 300px;
-    background-color: aqua;
+    height: 212px;
+    background-color: green;
+    border: 1px solid black;
 }
 
 #debug #col_piani_big{
-    height: 300px;
-    background-color: rgb(14, 50, 50);
-}
-
-/* debug text_block */
-#debug .text_block{
-    height: 150px;
-    background-color: bisque;
-}
-
-/* debug block */
-#debug .block{
-    height: 500px;
-    background-color: rgb(187, 227, 86);
-}
-
-#debug #block_team{
-    height: 500px;
-    background-color: rgb(187, 227, 86);
-}
-
-#debug #block_footer{
-    height: 500px;
-    background-color: rgb(187, 227, 86);
+    height: 212px;
+    background-color: green;
+    border: 1px solid black;
 }
 
 /* debug community */
@@ -103,24 +110,24 @@ img{
 
 /* debug team */
 #debug .col_team{
-    height: 300px;
+    height: 200px;
     background-color: aqua;
     border: 1px solid black;
 }
 
 #debug #col_team_lg{
-    height: 300px;
+    height: 200px;
     background-color: aqua;
     border: 1px solid black;
 }
 
 #debug #col_team_big{
-    height: 300px;
+    height: 200px;
     background-color: aqua;
     border: 1px solid black;
 }
 
-/****** debug footer ******/
+    /****** debug footer ******/
 #debug .col_footer{
     height: 300px;
     background-color: aqua;
@@ -132,6 +139,7 @@ img{
     background-color: aqua;
     border: 1px solid black;
 }
+
 /*************** UTILITY ***************/
 
 :root{
@@ -150,12 +158,7 @@ img{
     clear: both;
 }
 
-#col_sx{
-    float: left;
-    width: 50%;
-}
-
-#col_dx{
+#col_sx, #col_dx{
     float: left;
     width: 50%;
 }
@@ -196,12 +199,7 @@ img{
 
 /*************** MAIN ***************/
 
-.text_block{
-    width: 60%;
-    margin: 0 auto;
-}
-
-.block{
+.text_block, .block{
     width: 60%;
     margin: 0 auto;
 }
@@ -218,18 +216,13 @@ img{
 }
 
 /* piani */
-.row .col{
-    float: left;
-}
-
-.row #col_piani_big{
+.row .col, #col_piani_big{
     float: left;
 }
 
 .col{
     width: 33%;
-    margin-left: 0.33%;
-    
+    margin-left: 0.33%; 
 }
 
 #col_piani_big{
