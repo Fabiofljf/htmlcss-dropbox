@@ -7,11 +7,115 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-/***** DEBUG *****/
+img{
+    max-width: 100%;
+}
 
+/***** DEBUG *****/
+/* debug heaer */
+
+/* debug block_menu */
+#debug #block_menu{
+    height: 100px;
+    background-color: #0061FF;
+    margin-bottom: 100px;
+}
+
+#debug #col_sx{
+    background-color: bisque;
+    height: 100px;
+}
+
+/* debug block_intro */
+#block_intro{
+    background-color: grey;
+    height: 600px;
+}
+
+#debug #block_intro_small{
+    height: 85%;
+    background-color: bisque;
+}
+
+#debug #col_intro_one{
+    background-color: white;
+    height: 50%;
+}
+
+#debug #col_intro_two{
+    height: 50%;
+    background-color: black;
+}
+
+#debug #col_intro_three{
+    height: 50%;
+    background-color: red;
+}
 /***** UTILITY *****/
 
+:root{
+    --primary_color: #FFFFFF;
+    --secondary_color: #B4D0E7;
+    --black:#000000;
+    --action: #0061FF;
+}
+
 /***** HEADER *****/
+
+/* block_menu */
+#block_menu::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#col_sx{
+    float: left;
+    width: 50%;
+}
+
+#col_dx{
+    float: left;
+    width: 50%;
+}
+
+/* block_intro */
+#block_intro{
+    position: relative;
+}
+
+#block_intro_small{
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
+#row_intro::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#col_intro_one{
+    float: left;
+    width: 100%;
+}
+
+#col_intro_two{
+    float: left;
+    width: 35%;
+}
+
+#col_intro_three{
+    float: left;
+    width: 65%;
+}
+
+
+
+
 
 /***** MAIN *****/
 
