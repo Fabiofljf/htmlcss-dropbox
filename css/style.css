@@ -7,8 +7,20 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    max-width: 1440px;
+}
+
+#site_header, #site_main, #site_footer{
+    min-width: 1440px;
+}
+
 img{
     max-width: 100%;
+}
+
+a{
+    text-decoration: none;
 }
 
 /*************** DEBUG ***************/
@@ -18,6 +30,7 @@ img{
     height: 100px;
     background-color: #0061FF;
     margin-bottom: 50px;
+    border: 1px solid black;
 }
 
 .blocks{
@@ -66,19 +79,13 @@ img{
 }
 
 /* debug block_intro */
-#debug #col_intro_one{
+#debug #col_intro_s{
     background-color: green;
     height: 200px;
     border: 1px solid black;
 }
 
-#debug #col_intro_two{
-    height: 225px;
-    background-color: green;
-    border: 1px solid black;
-}
-
-#debug #col_intro_three{
+#debug #col_intro_lg{
     height: 225px;
     background-color: green;
     border: 1px solid black;
@@ -149,20 +156,96 @@ img{
     --action: #0061FF;
 }
 
-/*************** HEADER ***************/
+.margin_auto{
+    margin: 0 auto;
+}
 
-/* block_menu */
-#block_menu::after{
+.display{
+    display: inline-block;
+}
+
+.clearfix{
     content: "";
     display: table;
     clear: both;
 }
 
-#col_sx, #col_dx{
+.float{
     float: left;
+}
+
+.width20{
+    width: 20%;
+}
+
+.width30{
+    width: 30%;
+}
+
+.width35{
+    width: 35%;
+}
+
+.width40{
+    width: 40%;
+}
+
+.width50{
     width: 50%;
 }
 
+.width60{
+    width: 60%;
+}
+
+.width65{
+    width: 65%;
+}
+
+.width80{
+    width: 80%;
+}
+
+.width100{
+    width: 100%;
+}
+
+/*************** HEADER ***************/
+/* barra del menu */
+.menu_action_sx  a{
+    font-size: 16px;
+    color: var(--black);
+    margin-left: 30px;
+}
+
+/* col_sx */
+#col_sx img{
+    vertical-align: middle;
+    margin: 20px;
+}
+
+/* col_dx */
+.menu_action_dx{
+    margin: 20px 30px 0 150px;
+}
+
+.menu_action_dx  a{
+    font-size: 16px;
+    color: var(--black);
+    margin-left: 30px;
+}
+
+.btn_menu_dx > h6{
+    font-size: 14px;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--action);
+    height: 25px;
+    width: 60px;
+    margin-left: 15px;  
+}
+
+/*************** MAIN ***************/
 /* block_intro */
 .blocks{
     position: relative;
@@ -176,103 +259,25 @@ img{
     transform: translate(-50%, -0%);
 }
 
-#row_intro::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#col_intro_one{
-    float: left;
-    width: 100%;
-}
-
-#col_intro_two{
-    float: left;
-    width: 35%;
-}
-
-#col_intro_three{
-    float: left;
-    width: 65%;
-}
-
-/*************** MAIN ***************/
-
-.text_block, .block{
-    width: 60%;
-    margin: 0 auto;
-}
-
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#block_team{
-    width: 100%;
-    margin: 0 auto;
-}
-
-/* piani */
-.row .col, #col_piani_big{
-    float: left;
-}
-
+/* block_piani */
 .col{
     width: 33%;
     margin-left: 0.33%; 
 }
 
-#col_piani_big{
-    width: 100%;
-}
-
-/* community */
-#col_community_img{
-    width: 60%;
-    float: left;
-}
-
-#col_community_text{
-    width: 40%;
-    float: left;
-}
+/* block_community */
 
 /* operazioni */
 
-/* team */
-.col_team{
-    width: 30%;
-    float: left;
-}
+/* block_team */
 
-#col_team_lg{
-    width: 40%;
-    float: left;
-}
+/* block_team */
 
-#col_team_big{
-    width: 100%;
-    float: left;
-}
-
-/* faq */
+/* block_faq */
 
 /*************** FOOTER ***************/
 
 #block_footer{
     width: 70%;
     margin-left: 7.5%;
-}
-
-.col_footer{
-    width: 20%;
-    float: left;
-}
-
-#col_footer_lg{
-    width: 100%;
-    float: left;
 }
