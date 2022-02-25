@@ -95,7 +95,6 @@ a{
 #debug .col{
     height: 212px;
     background-color: green;
-    border: 1px solid black;
 }
 
 #debug #col_piani_big{
@@ -158,6 +157,14 @@ a{
 
 .margin_auto{
     margin: 0 auto;
+}
+
+.margin_left{
+    margin-left: 15px;
+}
+
+.special_margin{
+    margin: 0 5.96px;
 }
 
 .display{
@@ -249,6 +256,7 @@ a{
 /* block_generici */
 .blocks{
     position: relative;
+    margin-top: 200px;
 }
 
 /* block_intro */
@@ -267,7 +275,6 @@ a{
 
 #testo_blocco_intro > h1{
     font-size: 76px;
-    font-weight: bold;
     color: var(--black);
     margin: 50px 0 50px;
 }
@@ -277,19 +284,43 @@ a{
     color: var(--black);
 }
 
-#col_intro_lg > img{
-    
+/* block_piani */
+.testo_blocco  h2{
+    font-size: 40px;
+    color: var(--black);
 }
 
-/* block_piani */
-
+.radio{
+    margin: 40px 0;
+}
 
 .col{
     width: 33%;
-    margin-left: 0.33%; 
+    border: 1px solid grey;
+}
+
+#titolo_col h6{
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid grey ;
 }
 
 /* block_community */
+#col_community_img{
+    height: 529px;
+}
+
+#col_community_text{
+    padding: 10px 150px 0 80px;
+}
+
+#col_community_text h2{
+    font-size: 25px;
+}
+
+#col_community_text h2, p{
+    margin: 25px;
+}
 
 /* operazioni */
 
