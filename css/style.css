@@ -33,7 +33,7 @@ a{
     border: 1px solid black;
 }
 
-.blocks{
+#debug .blocks{
     background-color: grey;
     height: 500px;
     margin-bottom: 50px;
@@ -182,8 +182,8 @@ a{
     width: 30%;
 }
 
-.width35{
-    width: 35%;
+.width33{
+    width: 33%;
 }
 
 .width40{
@@ -198,12 +198,12 @@ a{
     width: 60%;
 }
 
-.width65{
-    width: 65%;
+.width67{
+    width: 67%;
 }
 
-.width80{
-    width: 80%;
+.width83{
+    width: 83%;
 }
 
 .width100{
@@ -246,20 +246,44 @@ a{
 }
 
 /*************** MAIN ***************/
-/* block_intro */
+/* block_generici */
 .blocks{
     position: relative;
 }
 
+/* block_intro */
+.blocks_intro{
+    position: relative;
+    background-color: var(--secondary_color);
+    height: 690px;
+}
+
 #block_intro{
     position: absolute;
-    width: 80%;
-    bottom: 0;
+    width: 83%;
     left: 50%;
     transform: translate(-50%, -0%);
 }
 
+#testo_blocco_intro > h1{
+    font-size: 76px;
+    font-weight: bold;
+    color: var(--black);
+    margin: 50px 0 50px;
+}
+
+#col_intro_s > p{
+    font-size: 16px;
+    color: var(--black);
+}
+
+#col_intro_lg > img{
+    
+}
+
 /* block_piani */
+
+
 .col{
     width: 33%;
     margin-left: 0.33%; 
