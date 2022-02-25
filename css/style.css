@@ -167,6 +167,10 @@ a{
     margin: 0 5.96px;
 }
 
+.special_border{
+    border: 1px solid grey;
+}
+
 .display{
     display: inline-block;
 }
@@ -296,7 +300,7 @@ a{
 
 .col{
     width: 33%;
-    border: 1px solid grey;
+    border: 1px solid black;
 }
 
 #titolo_col h6{
@@ -318,13 +322,37 @@ a{
     font-size: 25px;
 }
 
-#col_community_text h2, p{
+#col_community_text > h2{
     margin: 25px;
+}
+
+#col_community_text > p{
+    margin: 25px;
+}
+
+#btn_community{
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 25px;
+    color: black;
+}
+
+#btn_community a{
+    color: var(--black);
 }
 
 /* operazioni */
 
-/* block_team */
+.testo_operazioni h5{
+    font-size: 24px;
+    color: var(--black);
+}
+
+.testo_operazioni > h5, p{
+    padding: 0 40px 20px 40px;
+}
 
 /* block_team */
 
