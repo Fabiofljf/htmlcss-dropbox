@@ -40,6 +40,13 @@ a{
     border: 1px solid black;
 }
 
+#debug .blocks_footer{
+    background-color: black;
+    height: 500px;
+    margin-bottom: 500px;
+    border: 1px solid black;
+}
+
 #debug #text_block_team{
     height: 150px;
     background-color: bisque;
@@ -134,14 +141,12 @@ a{
     /****** debug footer ******/
 #debug .col_footer{
     height: 300px;
-    background-color: aqua;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 #debug #col_footer_lg{
     height: 200px;
-    background-color: aqua;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 /*************** UTILITY ***************/
@@ -268,7 +273,7 @@ a{
 .btn_menu_dx > h6{
     font-size: 14px;
     text-align: center;
-    color: var(--black);
+    color: white;
     background-color: var(--action);
     height: 25px;
     width: 60px;
@@ -502,4 +507,54 @@ a{
 #block_footer{
     width: 70%;
     margin-left: 7.5%;
+}
+
+.blocks_footer{
+    background-color: var(--black);
+    margin-top: 200px;
+}
+
+.col_footer{
+    background-color: var(--black);
+    padding: 20px 0;
+}
+
+#title_footer h3{
+    font-size: 20px;
+    color: var(--primary_color);
+}
+
+.ancor_footer a{
+    display: block;
+    margin-top: 14px;
+    color: var(--primary_color);
+}
+
+#col_footer_lg{
+    background-color: var(--black);
+}
+
+/* barra lingua */
+#barra_lingua{
+    border-top: 1px solid grey;
+    margin-top: 100px;
+}
+
+.lingua{
+    color: grey;
+    margin-left: 10px;
+}
+
+#freccia_lingua{
+    color: grey;
+    font-size: 40px;
+    margin-left: 20px;
+    vertical-align: text-bottom;
+}
+
+#img_footer svg{
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+    vertical-align: middle;
 }
