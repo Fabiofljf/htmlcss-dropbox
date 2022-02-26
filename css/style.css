@@ -36,12 +36,12 @@ a{
 #debug .blocks{
     background-color: grey;
     height: 500px;
-    margin-bottom: 50px;
+    margin-bottom: 500px;
     border: 1px solid black;
 }
 
-#debug .text_block{
-    height: 85px;
+#debug #text_block_team{
+    height: 150px;
     background-color: bisque;
     border: 1px solid black;
 }
@@ -128,8 +128,6 @@ a{
 }
 
 #debug #col_team_big{
-    height: 200px;
-    background-color: aqua;
     border: 1px solid black;
 }
 
@@ -153,6 +151,14 @@ a{
     --secondary_color: #B4D0E7;
     --black:#000000;
     --action: #0061FF;
+    --square_1_team: #A2D39B;
+    --square_2_team: #61082B;
+    --square_3_team: #0093CE;
+    --square_4_team: #FF1C1C;
+    --square_5_team: #D5001F;
+    --square_6_team: #B4D0E7;
+    --square_7_team: #0D2481;
+    --square_8_team: #FFD830;
 }
 
 .margin_auto{
@@ -219,6 +225,19 @@ a{
 
 .width100{
     width: 100%;
+}
+
+.square{
+    height: 214.4px;
+}
+
+.logo_img_team{
+    width: 150px;
+    height: 212.4px;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+    filter: invert(1);
 }
 
 /*************** HEADER ***************/
@@ -300,7 +319,6 @@ a{
 
 .col{
     width: 33%;
-    border: 1px solid black;
 }
 
 #titolo_col h6{
@@ -354,7 +372,72 @@ a{
     padding: 0 40px 20px 40px;
 }
 
+.col img{
+    width: 85%;
+}
+
 /* block_team */
+#text_block_team h2{
+    font-size: 40px;
+    color: var(--black);
+    padding: 0 650px 30px 0px;
+}
+
+#action_text_team{
+    margin-top: 40px;
+}
+
+#action_text_team a{
+    text-decoration: underline;
+    color: #0A67FF;
+}
+
+/* colonna di sx */
+#square_1{
+    background-color: var(--square_1_team);
+}
+
+#square_2{
+    background-color: var(--square_2_team);
+}
+
+#square_3{
+    background-color: var(--square_3_team);
+}
+
+#square_4{
+    background-color: var(--square_4_team);
+}
+
+/* colonna centrale alta */
+#logo_uff{
+    height: 100px;
+    width: 200px;
+    margin-left: 40px;
+}
+
+/* colonna di dx */
+#square_5{
+    background-color: var(--square_5_team);
+}
+
+#square_6{
+    background-color: var(--square_6_team);
+}
+
+#square_7{
+    background-color: var(--square_7_team);
+}
+
+#square_8{
+    background-color: var(--square_8_team);
+}
+
+/* colonna centrale bassa */
+#col_team_big{
+    height: 300px;
+    background-color: var(--square_6_team);
+}
 
 /* block_faq */
 
