@@ -170,8 +170,20 @@ a{
     margin: 0 auto;
 }
 
+.margin_top_10{
+    margin-top: 10px;
+}
+
+.margin_su-giu_20{
+    margin: 20px 0;
+}
+
 .margin_left{
     margin-left: 15px;
+}
+
+.vertical_aling{
+    vertical-align: middle;
 }
 
 .special_margin{
@@ -222,6 +234,10 @@ a{
 
 .width67{
     width: 67%;
+}
+
+.width79{
+    width: 79%;
 }
 
 .width83{
@@ -313,6 +329,7 @@ a{
 }
 
 /* block_piani */
+/* titolo piano */
 .testo_blocco  h2{
     font-size: 40px;
     color: var(--black);
@@ -326,10 +343,88 @@ a{
     width: 33%;
 }
 
-#titolo_col h6{
+.titolo_col h6{
     text-align: center;
     padding: 5px;
     border-bottom: 1px solid grey ;
+}
+
+/* descrizione piano */
+.container_info_piani{
+    padding: 30px 78px 30px 60px;
+    margin-bottom: 150px;
+}
+
+.container_info_piani_b{
+    padding: 30px 78px 30px 60px;
+    margin-bottom: 116px;
+}
+
+.descrizione{
+    color: grey;
+}
+
+.margin-bottom_5{
+    margin-bottom: 5px;
+}
+
+.info > div{
+    margin-bottom: 5px;
+}
+
+.acquista_ora > a{
+    text-decoration: underline;
+    color: var(--action);
+}
+
+.action_info{
+    background-color: var(--action);
+    color: var(--primary_color);
+    padding: 5px;
+    text-align: center;
+}
+
+.margin-bottom_10{
+    margin-bottom: 10px;
+}
+
+.margin-bottom_20{
+    margin-bottom: 20px;
+}
+
+.size_25_bold{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.size_16_bold{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.size_16_regular{
+    font-size: 16px;
+}
+
+.size_14_bold{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.size_14_regular{
+    font-size: 14px;
+}
+
+.lista_ul{
+    list-style-type: none;
+}
+
+.lista_ul > li{
+    margin-bottom: 15px;
+}
+
+.icona_true{
+    color: var(--action);
 }
 
 /* block_community */
@@ -505,7 +600,7 @@ a{
 /*************** FOOTER ***************/
 
 #block_footer{
-    width: 70%;
+    width: 83%;
     margin-left: 7.5%;
 }
 
