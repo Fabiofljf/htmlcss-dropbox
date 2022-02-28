@@ -200,6 +200,10 @@ a{
     margin-bottom: 10px;
 }
 
+.margin-bottom_15{
+    margin-bottom: 15px;
+}
+
 .margin-bottom_20{
     margin-bottom: 20px;
 }
@@ -220,6 +224,14 @@ a{
 /* bordo */
 .special_border{
     border: 1px solid grey;
+}
+
+.acquista_ora > div{
+    padding-bottom: 30px;
+}
+
+.special_border_acquista_ora_piani{
+    border-bottom: 1px solid grey;
 }
 
 /* testo */
@@ -260,29 +272,12 @@ a{
     font-size: 40px;
 }
 
-.lista_ul{
-    list-style-type: none;
-}
-
-.vertical_align{
-    vertical-align: middle;
-}
-
-.display{
-    display: inline-block;
-}
-
-.clearfix{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.float{
-    float: left;
-}
 
 /* larghezza */
+.width5{
+    width: 5%;
+}
+
 .width20{
     width: 20%;
 }
@@ -319,11 +314,37 @@ a{
     width: 83%;
 }
 
+.width95{
+    width: 95%;
+}
+
 .width100{
     width: 100%;
 }
 
 /* altro */
+.lista_ul{
+    list-style-type: none;
+}
+
+.vertical_align{
+    vertical-align: middle;
+}
+
+.display{
+    display: inline-block;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float{
+    float: left;
+}
+
 .square{
     height: 214.4px;
 }
@@ -338,6 +359,25 @@ a{
 }
 
 /*************** HEADER ***************/
+/* bonus-sub_menu */
+#block_intro{
+    position: relative;
+}
+
+#sub_menu{
+    height: 300px;
+    width: 600px;
+    background-color: #F3F4F5;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    visibility: hidden;
+}
+
+.hover:hover #sub_menu{
+    visibility: visible;
+}
+
 /* barra del menu */
 .menu_action_sx  a{
     color: var(--black);
@@ -431,7 +471,7 @@ a{
     text-align: center;
 }
 
-.lista_ul > li{
+.punti > .col_punti_lg{
     margin-bottom: 15px;
 }
 
@@ -442,7 +482,7 @@ a{
 /* block_community */
 .blocks_community{
     position: relative;
-    margin: 250px 0 -25px;
+    margin: 200px 0 -50px;
 }
 
 #col_community_img{
