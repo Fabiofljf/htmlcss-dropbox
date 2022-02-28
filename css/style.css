@@ -450,8 +450,22 @@ a{
     margin: 50px 0 50px;
 }
 
+.prova{
+    width: 60%;
+    margin: 20px 0;
+    background-color: var(--action);
+    color: var(--primary_color);
+    padding: 5px;
+    text-align: center;
+}
+
 /*** block_piani ***/
 /* titolo piano */
+.freccia > a{
+    font-size: 50px;
+    color: black;
+}
+
 .radio{
     margin: 40px 0;
 }
@@ -488,6 +502,7 @@ a{
     padding: 5px;
     text-align: center;
 }
+
 
 .punti > .col_punti_lg{
     margin-bottom: 15px;
