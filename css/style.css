@@ -364,18 +364,36 @@ a{
     position: relative;
 }
 
-#sub_menu{
+.menu > li{
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.menu a{
+    color: var(--black)
+}
+
+.menu{
+    position: relative;
+}
+
+.sub_menu{
     height: 300px;
-    width: 600px;
+    width: 180px;
     background-color: #F3F4F5;
     position: absolute;
-    top: 50px;
-    left: 200px;
+    top: 20px;
+    left: 170px;
+    z-index: 1;
     visibility: hidden;
 }
 
-.hover:hover #sub_menu{
+.menu li:hover .sub_menu{
     visibility: visible;
+}
+
+.dentro_sub_menu > li{
+    margin: 25px;
 }
 
 /* barra del menu */
